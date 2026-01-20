@@ -1,0 +1,17 @@
+title: sojkaware
+description: Privacy-first, local-first utility applications for Android.
+theme: null
+
+collections:
+  apps:
+    output: true
+    permalink: /apps/:path/
+  games:
+    output: true
+    permalink: /games/:path/
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: "default"

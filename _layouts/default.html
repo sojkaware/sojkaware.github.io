@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
+    <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+    <!-- GitHub Octicons or similar could be added here if needed -->
+</head>
+<body>
+
+    <nav class="sidebar">
+        <header>
+            <h1><a href="{{ '/' | relative_url }}">{{ site.title }}</a></h1>
+            <div class="description">{{ site.description }}</div>
+        </header>
+
+        <div class="nav-section">
+            <h3>Menu</h3>
+            <ul class="nav-links">
+                <li><a href="{{ '/' | relative_url }}" class="{% if page.url == '/' %}active{% endif %}">🏠 Home</a></li>
+                <li><a href="{{ '/apps.html' | relative_url }}" class="{% if page.url == '/apps.html' %}active{% endif %}">📱 Apps</a></li>
+                <li><a href="{{ '/games.html' | relative_url }}" class="{% if page.url == '/games.html' %}active{% endif %}">🎮 Games</a></li>
+                <li><a href="{{ '/tags.html' | relative_url }}" class="{% if page.url == '/tags.html' %}active{% endif %}">🏷️ Tags</a></li>
+            </ul>
+        </div>
+
+        <div class="nav-section">
+            <h3>Featured Games</h3>
+            <ul class="nav-links">
+                <li><a href="https://sojkaware.github.io/Tunneler/index.html" target="_blank">🪖 Tunneler (Direct)</a></li>
+                <li><a href="{{ '/games/tunneler.html' | relative_url }}">🪖 Tunneler (Embed)</a></li>
+                <li><a href="#" style="opacity: 0.6; cursor: default;">👗 Fashion Saloon (Coming Soon)</a></li>
+            </ul>
+        </div>
+        
+        <div class="nav-section">
+             <h3>Links</h3>
+             <ul class="nav-links">
+                <li><a href="mailto:sojkaware@gmail.com">📧 Contact</a></li>
+             </ul>
+        </div>
+    </nav>
+
+    <main class="main-content">
+        {{ content }}
+    </main>
+
+</body>
+</html>
