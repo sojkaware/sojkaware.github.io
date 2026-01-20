@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Apps
+tags: [android, apps, utility, privacy]
 ---
 
 # Apps

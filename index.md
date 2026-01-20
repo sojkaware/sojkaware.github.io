@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Home
+tags: [privacy, android, local-first, developer]
 ---
 
 # sojkaware
